@@ -43,16 +43,20 @@ public class Driver {
             } else {
                 browserType = System.getProperty("BROWSER");
             }
+
             System.out.println("Browser: " + browserType);
             /*
             Depending on the browserType returned from the configuration.properties
             switch statement will determine the "case", and open the matching browser.
              */
+
+
+
             switch (browserType){
                 case "remote-chrome":
                     try {
                         // assign your grid server address
-                        String gridAddress = "34.239.154.115";
+                        String gridAddress = "44.202.100.36";
                         URL url = new URL("http://"+ gridAddress + ":4444/wd/hub");
                         ChromeOptions chromeOptions = new ChromeOptions();
                         chromeOptions.addArguments("--start-maximized");
@@ -66,7 +70,7 @@ public class Driver {
                 case "remote-firefox":
                     try {
                         // assign your grid server address
-                        String gridAddress = "34.239.154.115";
+                        String gridAddress = "34.234.152.90";
                         URL url = new URL("http://"+ gridAddress + ":4444/wd/hub");
                         FirefoxOptions firefoxOptions=new FirefoxOptions();
                         firefoxOptions.addArguments("--start-maximized");
