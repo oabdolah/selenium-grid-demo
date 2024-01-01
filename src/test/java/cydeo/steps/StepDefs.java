@@ -62,6 +62,7 @@ public class StepDefs {
     public void user_login() {
         System.out.println("DONE");
         System.out.println("new branch aziz");
+        Assert.assertTrue(5+5==11);
     }
 
 
