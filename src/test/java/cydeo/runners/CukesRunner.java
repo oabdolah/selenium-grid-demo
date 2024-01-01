@@ -13,6 +13,6 @@ import org.junit.runner.RunWith;
                 },
         features = "src/test/resources/features",
         glue = "cydeo/steps",
-        publish = true
+        publish = false
 )
 public class CukesRunner {}

@@ -54,4 +54,13 @@ public class StepDefs {
         Assert.assertTrue(Driver.getDriver().getCurrentUrl().contains("search"));
     }
 
+    @Given("user at login page")
+    public void user_at_login_page() {
+        System.out.println("WIP");
+    }
+    @When("user login")
+    public void user_login() {
+        System.out.println("DONE");
+    }
+
 }
